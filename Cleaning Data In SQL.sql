@@ -50,22 +50,6 @@ AnD a.[UniqueID ] <> b.[UniqueID ]
 where a.PropertyAddress is Null
 
 
----**Shpjegim per vete**--
----Po te ekzekutojme Update tani dhe me pas te ekzekutoj rreshtat e meparshem ku beme modifikimin,do shohim qe do na dalin vetem kolonat pa asnje vlere sepse eshte bere modifikimi dhe nuk kemi me vlera Null neper rreshta.
---Tani po te shkosh te kontrollosh(te besh double check) e ta ekzekutosh dhe nje here komanden e pare:
-
---Select *
---From [Portofolio Project/Data Cleaning]..[Housing Information]
---where PropertyAddress is Null
---Order by ParcelID
-
---Do na dalin vetem kolonat pa asnje vlere,sepse nuk ka me vlera Null neper rreshta sic kishim me pare,tani eshte populluar cdo rresht.
---Ndersa po ta besh koment rreshtin ne fjale:
---where PropertyAddress is Null 
-
---Do shohesh qe te dalin te gjithe rreshtat te populluar.
-
-
 
 -----------------------------------------------------------------------------------------------------
 ---Breaking out Address into Individual Colomns (Address,City,State)
